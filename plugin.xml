@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="lycwed-cordova-plugin-admob-inmobi"
-    version="1.0.0"
+    version="1.0.1"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -25,12 +25,14 @@
                 android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
                 android:hardwareAccelerated="true"
                 android:resizeableActivity="false"
-                android:theme="@android:style/Theme.NoTitleBar"
-                tools:ignore="UnusedAttribute" />
+                android:theme="@android:style/Theme.NoTitleBar" />
         </config-file>
         
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver" android:enabled="true" android:exported="true" tools:ignore="ExportedReceiver">
+            <receiver android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
+                android:enabled="true"
+                android:exported="true"
+                tools:ignore="ExportedReceiver">
                 <intent-filter>
                     <action android:name="com.inmobi.share.id"/>
                 </intent-filter>

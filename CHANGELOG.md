@@ -1,3 +1,6 @@
+## [1.0.4] 
+- iOS platform: Remove libs replace by admob inmobi pod
+
 ## [1.0.3] 
 - Add libs
 

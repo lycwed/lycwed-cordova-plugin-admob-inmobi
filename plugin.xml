@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin id="lycwed-cordova-plugin-admob-inmobi"
-    version="1.0.3"
+    version="1.0.4"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -19,8 +19,9 @@
     </platform>
 
     <platform name="ios">
-        <header-file src="src/ios/GADInMobiExtras.h" />
-        <header-file src="src/ios/GADMAdapterInMobi.h" />
-        <source-file src="src/ios/libAdapterInMobi.a" framework="true" />
+        <pods-config ios-min-version="9.0" use-frameworks="true" />
+        <pod id="GoogleMobileAdsMediationInMobi" version="7.0.4.0" />
+
+        <dependency id="cordova-plugin-cocoapod-support"/>
     </platform>
 </plugin>

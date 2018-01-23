@@ -14,35 +14,13 @@
         <engine name="cordova" version=">=3.0.0" />
     </engines>
 
-    <platform name="android">        
-        <framework src="com.inmobi.monetization:inmobi-ads:7.0.2" />
-        <framework src="com.google.ads.mediation:inmobi:7.0.2.0" />
-        <framework src="com.squareup.picasso:picasso:2.5.2" />
-        <framework src="com.android.support:recyclerview-v7:xx.x.x" />
-
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:name="com.inmobi.rendering.InMobiAdActivity"
-                android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize|screenLayout"
-                android:hardwareAccelerated="true"
-                android:resizeableActivity="false"
-                android:theme="@android:style/Theme.NoTitleBar" />
-        </config-file>
-        
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <receiver android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
-                android:enabled="true"
-                android:exported="true">
-                <intent-filter>
-                    <action android:name="com.inmobi.share.id"/>
-                </intent-filter>
-            </receiver>
-        </config-file>
+    <platform name="android">
+        <source-file src="src/android/libadapterinmobi.jar" target-dir="libs" />
     </platform>
 
     <platform name="ios">
-        <pods-config ios-min-version="9.0" use-frameworks="true" />
-        <pod id="GoogleMobileAdsMediationInMobi" version="7.0.4.0" />
-
-        <dependency id="cordova-plugin-cocoapod-support"/>
+        <header-file src="src/ios/GADInMobiExtras.h" />
+        <header-file src="src/ios/GADMAdapterInMobi.h" />
+        <source-file src="src/ios/libAdapterInMobi.a" framework="true" />
     </platform>
 </plugin>

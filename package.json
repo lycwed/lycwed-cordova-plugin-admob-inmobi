@@ -1,6 +1,6 @@
 {
   "name": "lycwed-cordova-plugin-admob-inmobi",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Cordova AdMob Mediation Plugin for InMobi",
   "scripts": {
     "version": "sync-package-version --cordova-plugin"

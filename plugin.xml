@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="lycwed-cordova-plugin-admob-inmobi"
-    version="1.0.5"
+<plugin id="lycwed-cordova-plugin-admob-inmobi" version="1.0.6"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <name>lycwed-cordova-plugin-admob-inmobi</name>
-    <description>Cordova AdMob Mediation Plugin for InMobi</description>    
-    <author>Lycwed</author>
-    <keywords>admob,mediation,inmobi</keywords>
-    <license>MIT</license>
+    <description>Cordova AdMob Mediation Plugin for InMobi</description>
 
     <engines>
         <engine name="cordova" version=">=3.0.0" />
@@ -21,7 +17,5 @@
     <platform name="ios">
         <pods-config ios-min-version="9.0" use-frameworks="true" />
         <pod id="GoogleMobileAdsMediationInMobi" version="7.0.4.0" />
-
-        <dependency id="cordova-plugin-cocoapod-support"/>
     </platform>
 </plugin>

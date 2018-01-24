@@ -1,6 +1,6 @@
 # Cordova AdMob Mediation Plugin for InMobi
 
-Plugin compatible with cordova-plugin-admob-free
+This mediation plugin is compatible with cordova-plugin-admob-free.
 
 ## Installation
 

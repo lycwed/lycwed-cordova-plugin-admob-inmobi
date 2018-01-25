@@ -1,3 +1,6 @@
+## [1.0.7]
+- Re-add cordova-plugin-cocoapod-support and cordova-plugin-multidex
+
 ## [1.0.6]
 - Remove cordova-plugin-cocoapod-support and add it into lycwed-cordova-plugin-admob-free
 

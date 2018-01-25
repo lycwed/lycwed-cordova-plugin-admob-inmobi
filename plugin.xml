@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin id="lycwed-cordova-plugin-admob-inmobi" version="1.0.6"
+<plugin id="lycwed-cordova-plugin-admob-inmobi" version="1.0.7"
     xmlns="http://apache.org/cordova/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -12,10 +12,17 @@
 
     <platform name="android">
         <source-file src="src/android/libadapterinmobi.jar" target-dir="libs" />
+
+        <!-- Prevents compilation error: https://developer.android.com/studio/build/multidex.html -->
+        <!-- when add additional mediation plugins -->
+        <dependency id="cordova-plugin-multidex" />
     </platform>
 
     <platform name="ios">
         <pods-config ios-min-version="9.0" use-frameworks="true" />
         <pod id="GoogleMobileAdsMediationInMobi" version="7.0.4.0" />
+
+        <!-- Prevents compilation failures when using pod's id with additional mediations plugins -->
+        <dependency id="cordova-plugin-cocoapod-support" />
     </platform>
 </plugin>

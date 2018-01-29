@@ -1,3 +1,6 @@
+## [1.0.9]
+- Remove tools:ignore from activity and tools:ignore from receiver
+
 ## [1.0.8]
 - Retry google admob mediation integration, remove jar
 

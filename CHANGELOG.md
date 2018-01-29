@@ -1,3 +1,6 @@
+## [1.0.8]
+- Retry google admob mediation integration, remove jar
+
 ## [1.0.7]
 - Re-add cordova-plugin-cocoapod-support and cordova-plugin-multidex
 
